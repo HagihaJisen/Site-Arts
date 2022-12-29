@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+#menu-h ul{
+    text-align: center;
+    list-style: none;
+    padding: 3px;
+    background-color: rgb(42, 51, 54);
+}
+#menu-h ul li{
+   display: inline;
+   
+}
+#menu-h ul li a{
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  transition: background 0.3s;
+
+}
+#menu-h ul li a:hover{
+    background-color: #7709aa;
+}
+
+/*CARDS*/
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 130, 160);
+    background-image: url("");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #000000;
+    cursor: pointer   ;
+    transition: 0.5s ease-in-out;
+}
+.card-text{
+    width: 40%;
+    letter-spacing: 1px;
+    color: #444;
+    font-family: 'Ubuntu', sans-serif;
+}
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.card-wrapper::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    display: flex;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-wrapper h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-wrapper p{
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5 ease-in-out;
+}
+.card:hover{
+    filter: unset;
+}
+.card:hover >.cardwrapper::before{
+    height:200px; 
+    width: 200px;
+    opacity: 1;
+
+}
+.card:hover>.card-wrapper p{
+opacity: 1;
+visibility: visible;
+font-size: 14px;
+}
+
+/* Aqui os ids com dos Desenhos*/
+#p0{
+    background-image: url("../img/Shinobu.jpg");
+}
+#p1{
+    background-image: url("../img/Levy.jpg");
+    
+   
+}
+#p2{
+    background-image: url("..//img/Paimon.jpg");
+}
+#btn{
+    background-color: #3a3d3c;
+    border-color: 3px solid ;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    padding: 12px 7px;
+    text-align: center;
+    margin: 20px;
+
+}
+#btn:hover{
+    background-color: #7709aa;
+    transition: background 03.3s;
+
+}
+
+/* Barra de pesquisa*/
+.divSearch{
+    display: inline-block;
+    padding: 20px;
+      
+}
+input{
+    padding: 5px;
+    outline: none;
+    background-color: #bebbbb;
+    
+}
+input:hover{
+    background-color: cornflowerblue;
+    transition: background 03.3s;
+    
+}
+#pq{
+    background-image: url(../img/Design\ sem\ nome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: 3px solid ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    display: inline;
+    padding: 8px 30px;
+    margin: 10px;
+    cursor: pointer;
+  
+}
+
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(42, 51, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bebbbb;
+    
+}
